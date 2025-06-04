@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  blockly:
+    build: .
+    container_name: blockly-local
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
